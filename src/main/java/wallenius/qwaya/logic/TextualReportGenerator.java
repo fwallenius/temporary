@@ -14,6 +14,7 @@ import wallenius.qwaya.persistence.VisitReportRow;
 public class TextualReportGenerator {
 
     private final static int COLWIDTH1 = 30, COLWIDTH2 = 12, COLWIDTH3 = 10;
+    
     @Autowired
     private PageVisitRepository visitRepo;
 

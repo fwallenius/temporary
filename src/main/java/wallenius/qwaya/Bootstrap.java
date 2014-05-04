@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import wallenius.qwaya.logic.DateParser;
 import wallenius.qwaya.logic.TextualReportGenerator;
-import wallenius.qwaya.persistence.PageVisitRepository;
 import wallenius.qwaya.persistence.SQLitePageVisitRepository;
-import wallenius.qwaya.persistence.VisitReportRow;
 
 /**
  *
