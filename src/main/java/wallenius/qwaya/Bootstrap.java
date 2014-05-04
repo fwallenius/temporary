@@ -55,6 +55,11 @@ public class Bootstrap {
         System.out.println("");
         System.out.println("   When generating a report two optional parameters can be appended: startDate and endDate.");
         System.out.println("   The dates should be in format '2013-09-01 09:00:00' (use single or double quotes around the dates!)");
+        System.out.println("");
+        System.out.println("   Examples:");
+        System.out.println("     $ java -jar pixel-stats-0.1.0.jar server");
+        System.out.println("     $ java -jar pixel-stats-0.1.0.jar report");
+        System.out.println("     $ java -jar pixel-stats-0.1.0.jar report '2013-09-01 09:00:00' '2014-01-01 00:00:00'");
         System.exit(0);
     }
 
