@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        maven { url "http://repo.spring.io/libs-snapshot" }
+        mavenLocal()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.0.2.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.7
+mainClassName = "wallenius.qwaya.Bootstrap"
+
+jar {
+    baseName = 'pixel-stats'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-snapshot" }
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.xerial:sqlite-jdbc:3.7.2")
+    compile("commons-codec:commons-codec:1.5")
+    testCompile "org.mockito:mockito-core:1.9.5"
+    testCompile("junit:junit")
+    testCompile 'org.springframework:spring-test:4.0.2.RELEASE'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}   
