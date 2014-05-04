@@ -8,6 +8,7 @@ Before running you will need to build the "executable". This is a java project t
 ```console
 $ ./gradlew build
 ```
+This should work on Windows, Mac OS X and common Linux environments.
 
 Run the app
 -----------
