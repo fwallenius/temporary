@@ -61,9 +61,6 @@ public class SQLitePageVisitRepository implements PageVisitRepository {
 
     @Override
     public List<VisitReportRow> generateReport(final Date fromTime, final Date toTime) {
-        
-        LOG.info("From: " + fromTime);
-        LOG.info("To  : " + toTime);
 
         List<VisitReportRow> result = new ArrayList<>();
 
@@ -93,10 +90,6 @@ public class SQLitePageVisitRepository implements PageVisitRepository {
         PreparedStatement statement = con.prepareStatement(query.toString());
         statement.setLong(1, fromTime.getTime());
         statement.setLong(2, toTime.getTime());
-        
-        LOG.info("  " + query.toString());
-        LOG.info("  1: " + String.valueOf(fromTime.getTime()));
-        LOG.info("  2: " + String.valueOf(toTime.getTime()));
         
         return statement;
     }    
