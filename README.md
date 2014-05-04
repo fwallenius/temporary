@@ -1,4 +1,4 @@
-Qwaya work sample
+Work sample
 =================
 Simple analytics tool.
 
