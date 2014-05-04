@@ -84,7 +84,7 @@ public class SQLitePageVisitRepository implements PageVisitRepository {
         
         StringBuilder query = 
                 new StringBuilder("select path as url, count(path) as views, count (distinct userid) as visitors from visit ");
-        query.append("where timestamp > ? and timestamp < ?" );
+        query.append("where timestamp > ? and timestamp < ? " );
         query.append("group by path");
         
         PreparedStatement statement = con.prepareStatement(query.toString());

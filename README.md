@@ -1,4 +1,4 @@
-temporary
-=========
+Qwaya work sample
+=================
 
 Testing only
