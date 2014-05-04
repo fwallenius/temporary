@@ -2,17 +2,17 @@ Qwaya work sample
 =================
 Simple analytics tool.
 
-Build form sources
+Build from sources
 ------------------
-Before running you will need to build to "executable". This is a java project that is built using Gradle, but since the Gradle Wrapper is included in the repository so you will not need to have Gradle installed. After un-zipping the repository cd into the top folder and run:
-```
+Before running you will need to build the "executable". This is a java project that is built using Gradle, but since the Gradle Wrapper is included in the repository so you will not need to have Gradle installed. After un-zipping the repository cd into the top folder and run:
+```console
 $ ./gradlew build
 ```
 
 Run the app
 -----------
 After having built the jar-file it can be start with the following command, still standing in the repo's top folder:
-```
+```console
 $ java -jar build/libs/pixel-stats-0.1.0.jar
 ```
 Running the app without arguments will show the help-text that explains how to either start it in server-mode or to show the report.
